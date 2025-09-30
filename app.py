@@ -1,16 +1,18 @@
 # app.py
 # -*- coding: utf-8 -*-
 import streamlit as st
-import tempfile, os
+import tempfile
+from pathlib import Path
 
 from intersections import run_intersections
 from interpretation import load_catalog, render_html
 
 # =========================
-# Config de base (chemins)
+# Config de base (chemins relatifs au projet)
 # =========================
-CSV_PATH = "/CONFIG/v_commune_2025.csv"
-MAPPING_PATH = "/CONFIG/nouveau_catalogue_29_09.json"
+BASE_DIR = Path(__file__).resolve().parent
+CSV_PATH = BASE_DIR / "CONFIG" / "v_commune_2025.csv"
+MAPPING_PATH = BASE_DIR / "CONFIG" / "nouveau_catalogue_29_09.json"
 
 st.set_page_config("Analyse parcelle")
 st.title("🔎 Analyse parcelle")
@@ -27,13 +29,13 @@ if st.button("Lancer l’analyse") and parcel:
             commune="Latresne",
             departement="33",
             parcels=parcel,
-            csv=CSV_PATH,
-            mapping=MAPPING_PATH,
+            csv=str(CSV_PATH),
+            mapping=str(MAPPING_PATH),
             out_json=tmp_json,
         )
 
         # 2. Charger catalogue + interprétation HTML
-        catalog = load_catalog(MAPPING_PATH)
+        catalog = load_catalog(str(MAPPING_PATH))
         html = render_html(report, catalog)
 
         # 3. Sauver dans un fichier temporaire

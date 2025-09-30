@@ -12,12 +12,16 @@ Interpretation du rapport d'intersections (JSON) -> HTML lisible.
 
 import json
 import os
+from pathlib import Path
 from collections import defaultdict
 
-# ================== CHEMINS EN DUR ==================
-JSON_IN  = "/CONFIG/rapport_parcelle.json"
-MAP_PATH = "/CONFIG/nouveau_catalogue_29_09.json"
-HTML_OUT = "/rapport_parcelle.html"
+# ================== CHEMINS RELATIFS ==================
+BASE_DIR = Path(__file__).resolve().parent
+
+JSON_IN  = str(BASE_DIR / "rapport_parcelle.json")
+MAP_PATH = str(BASE_DIR / "CONFIG" / "nouveau_catalogue_29_09.json")
+HTML_OUT = str(BASE_DIR / "rapport_parcelle.html")
+
 
 # Colonnes à masquer dans les tableaux mais à remonter en "IDs associés"
 ID_LIKE = {"id", "gid", "gml_id", "uid"}

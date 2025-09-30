@@ -14,6 +14,7 @@ Dépendances: sqlalchemy, psycopg2-binary, python-dotenv, pandas, requests
 import os, json, argparse, logging, time
 from typing import Optional, List, Dict, Any, Tuple
 from urllib.parse import urlparse, quote_plus
+from pathlib import Path
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 from sqlalchemy.engine import Engine
@@ -29,15 +30,18 @@ if not logger.handlers:
     )
 
 # ======================= Défauts (ex-argparse en dur) =======================
+BASE_DIR = Path(__file__).resolve().parent
+
 DEFAULT_COMMUNE = "Latresne"
 DEFAULT_DEPARTEMENT = "33"
-DEFAULT_CSV_PATH = "/CONFIG/v_commune_2025.csv"
-DEFAULT_MAPPING_PATH = "/CONFIG/nouveau_catalogue_29_09.json"
-DEFAULT_JSON_OUT = "/rapport_parcelle.json"
+DEFAULT_CSV_PATH = str(BASE_DIR / "CONFIG" / "v_commune_2025.csv")
+DEFAULT_MAPPING_PATH = str(BASE_DIR / "CONFIG" / "nouveau_catalogue_29_09.json")
+DEFAULT_JSON_OUT = str(BASE_DIR / "rapport_parcelle.json")
 DEFAULT_SCHEMA_WHITELIST = ["public"]
 DEFAULT_VALUES_LIMIT = 100
 DEFAULT_CARVE_ENCLAVES = True
 DEFAULT_ENCLAVE_BUFFER_M = 120.0
+
 
 def _ms(t0: float) -> float:
     return (time.perf_counter() - t0) * 1000.0
