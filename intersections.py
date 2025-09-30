@@ -417,8 +417,14 @@ def _intersect_one_parcel(*, eng, layers, parcel_feature, carve_enclaves: bool, 
                         if hasattr(val, "isoformat"):
                             val = val.isoformat()
                         row_data[c] = val
+                pct = (inter_area / parcel_area_m2 * 100) if parcel_area_m2 else None
+
+                # Filtrage des très petites intersections (<0.5%)
+                if pct is not None and pct < 0.5:
+                    continue  # on ignore cette ligne
+
                 row_data["inter_area_m2"] = inter_area
-                row_data["pct_of_parcel"] = (inter_area / parcel_area_m2 * 100) if parcel_area_m2 else None
+                row_data["pct_of_parcel"] = pct
                 parsed_rows.append(row_data)
 
             if parsed_rows:
