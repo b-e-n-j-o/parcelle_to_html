@@ -1,0 +1,8 @@
+streamlit
+sqlalchemy
+psycopg2-binary
+geopandas
+shapely
+pandas
+requests
+python-dotenv

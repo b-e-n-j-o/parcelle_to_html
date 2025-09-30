@@ -1,0 +1,971 @@
+{
+    "public.monuments_historiques": {
+      "name": "Monuments historiques",
+      "type": "patrimoine_culturel",
+      "keep": [
+        "reference","destination","adresse_for","etablisseme","autre_appel","nature_de_l",
+        "auteur_de_l","cadastre","commune_for","copyright","type_de_cou","datation_de",
+        "denominatio","lieu_de_con","description","dimensions_","date_de_lab","date_de_la_",
+        "date_de_cre","domaine","typologie_d","date_et_typ","departement","partie_d_el",
+        "source_de_l","emplacement","description_1","etat_de_con","cadre_de_l_","genre_du_de",
+        "historique","nom_du_cour","identifiant","cog_insee_l","justificati","justificati_1",
+        "liens_exter","lieudit","lien_vers_l","materiaux_d","observation","precision_a",
+        "partie_cons","partie_cons_1","precision_s","personnes_l","typologie_d_1","precision_d",
+        "precision_d_1","description_2","typologie_d_2","precision_s_1","reference_a",
+        "lien_vers_l_1","lien_vers_l_2","references_","region","departement_1","elements_re",
+        "remploi","renvoi_vers","indexation_","siecle_de_c","siecle_de_l","format_abre",
+        "typologie_d_3","statut_juri","technique_d","titre_edito","materiaux_d_1","couverts_ou",
+        "vocable_pou","typologie_d_4","adresse_for_1","commune_for_1"
+      ],
+      "geom": "geom"
+    },
+    "public.patrimoine_naturel": {
+      "name": "Patrimoine naturel",
+      "type": "patrimoine_naturel",
+      "keep": ["uid","nom"],
+      "geom": "geom_2154"
+    },
+    "public.plu": {
+      "name": "Zonage PLU",
+      "type": "plu_zonage",
+      "keep": ["id","libelle","libelong","typezone","insee","update","source"],
+      "geom": "geom_2154"
+    },
+    "public.debroussaillement": {
+      "name": "Zones de débroussaillement",
+      "type": "ppr_feux_forets",
+      "keep": ["gid","zonage","dat_ap_old"],
+      "geom": "geom_2154"
+    },
+    "public.captage_eau_carteaux": {
+      "name": "Zones de captage d'eau",
+      "type": "captage_eau",
+      "keep": [
+        "gid","code_pp","precision","qualite","siren_ars","diffusion",
+        "_edit_date","projet","psv_code","code_ins","ins_cap_re","ins_pro_et","ins_pro__1","code_envir"
+      ],
+      "geom": "geom_2154"
+    },
+    "public.centrales_nucleaires": {
+      "name": "Centrales nucléaires",
+      "type": "installations_classees",
+      "keep": ["id","z_centrale","z_tranche","pt_centrale","pt_tranche","match_method","match_distance_km","area_m2"],
+      "geom": "geom"
+    },
+    "public.tramways_gironde": {
+      "name": "Tramways Gironde",
+      "type": "nuisances_sonores",
+      "keep": ["uid","source","cls_id","nature","etat","electrifie","cat_bruit","larg_secte","updated_at"],
+      "geom": "geom_2154"
+    },
+    "public.zaenr_zones": {
+      "name": "Zones ZAENR",
+      "type": "energie_renouvelable",
+      "keep": ["uid","detail_fil","commune","uploaded_at","source"],
+      "geom": "geom_2154"
+    },
+    "public.zones_sis_etudes_de_sols": {
+      "name": "Zones SIS (études de sols)",
+      "type": "sols_pollues",
+      "keep": [
+        "nom_usuel","adresse",
+        "nom_commun"
+      ],
+      "geom": "geom_2154"
+    },
+    "public.pm1_detaillee_gironde": {
+      "name": "Servitude PM1 détaillée Gironde",
+      "type": "servitudes",
+      "keep": [
+        "gid","source","nom","codezone","typereg","soumisalea"
+      ],
+      "geom": "geom_2154"
+    },
+    "public.retrait_gonflement_argiles": {
+      "name": "Retrait-gonflement des argiles",
+      "type": "ppr_mouvement_terrain",
+      "keep": ["dpt","niveau","alea"],
+      "geom": "geom_2154"
+    },
+    "public.pprts_et_pacs": {
+      "name": "PPRT et PACs",
+      "type": "pprt",
+      "keep": [
+        "l_pac_techno_ambes_macau_etablissement_cobogal_s_033","id_src","type_effet",
+        "indice_pro","seuil","cinetique","type_reg","idmap","zone_effet","nom","nomfic",
+        "urlfic","l_pac_techno_ambares_et_lagrave_bassens_societe_foresa_s_033",
+        "niveau_ale","typereg","l_pac_techno_beychac_et_caillau_etablissement_cic_s_033",
+        "l_pac_techno_la_teste_de_buch_societe_vermilion_rep_s_033",
+        "l_pac_techno_leognan_societe_lyonnaise_des_eaux_s_033",
+        "l_pac_techno_villenave_ornon_entreprise_gazechim_s_033",
+        "l_pac_techno_cestas_societe_quaron_s_033","l_pac_techno_floirac_societe_air_liquide_s_033",
+        "n_zone_reg_pprt_20160001_s_033","id_zone","id_map","id_gaspar","codezone","soumisalea",
+        "srce_geom","srce_annee","precision","l_pac_techno_bordeaux_societe_groupe_bernard_s_033",
+        "l_pac_techno_bordeaux_societe_saft_s_033","l_pac_techno_bordeaux_floirac_societe_brenntag_sa_s_033",
+        "n_zone_reg_pprt_20200002_s_033","n_zone_reg_pprt_20140001_s_033","n_zone_reg_pprt_20130133_s_033",
+        "n_zone_reg_pprt_20130132_s_033","n_zone_reg_pprt_20090003_s_033","n_zone_reg_pprt_20130130_s_033",
+        "n_zone_reg_pprt_20130131_s_033","n_zone_reg_pprt_20130134_s_033","n_zone_reg_pprt_20200001_s_033",
+        "l_pac_techno_le_haillan_st_medard_en_jalles_arianegroup_s_033",
+        "l_pac_techno_st_loubes_societe_chaussade_duboe_transports_s_033","tyreg",
+        "l_pac_techno_ambes_societe_kurita_s_033","l_pac_techno_beychac_et_caillau_soc_tonnellerie_boutes_s_033",
+        "source","layer","wfs_url"
+      ],
+      "geom": "geom"
+    },
+      "public.secteurs_carte_communale": {
+        "name": "Secteurs de carte communale",
+        "type": "plu_zonage",
+        "keep": [
+          "gml_id",
+          "libelong",
+          "update",
+          "source"
+        ],
+        "geom": "geom_2154"
+      },
+        "public.secteurs_carrieres_comblees": {
+          "name": "Secteurs carrières comblées",
+          "type": "carrieres",
+          "keep": [
+            "type_comblement",
+            "nom_cavite",
+            "commentaires_cd33",
+            "uploaded_at",
+            "source"
+          ],
+          "geom": "geometry"
+        },
+    "public.ac2_sites_territoire_exception": {
+      "name": "Sites et territoires d'exception (AC2)",
+      "type": "sites_classes",
+      "keep": ["gml_id","libelle","nomsuplitt","longue","update","source"],
+      "geom": "geom"
+    },
+    "public.ac4": {
+      "name": "Servitudes AC4",
+      "type": "servitudes",
+      "keep": ["idass","idgen","typeass","nomsuplitt","servitude","source"],
+      "geom": "geom_2154"
+    },
+    "public.ac4bis": {
+      "name": "Servitudes AC4BIS",
+      "type": "servitudes",
+      "keep": ["idass","idgen","typeass","nomsuplitt","servitude","source"],
+      "geom": "geom_2154"
+    },
+    "public.ac3": {
+      "name": "Servitudes AC3",
+      "type": "servitudes",
+      "keep": ["idass","idgen","typeass","nomsuplitt","servitude","source"],
+      "geom": "geom_2154"
+    },
+    "public.ac2": {
+      "name": "Servitudes AC2",
+      "type": "servitudes",
+      "keep": ["idass","idgen","typeass","nomsuplitt","servitude","source"],
+      "geom": "geom_2154"
+    },
+    "public.ac1": {
+      "name": "Servitudes AC1",
+      "type": "servitudes",
+      "keep": ["idass","idgen","typeass","nomsuplitt","servitude","source"],
+      "geom": "geom_2154"
+    },
+    "public.a9": {
+      "name": "Servitudes A9",
+      "type": "servitudes",
+      "keep": ["idass","idgen","typeass","nomsuplitt","servitude","source"],
+      "geom": "geom_2154"
+    },
+    "public.a7": {
+      "name": "Servitudes A7",
+      "type": "servitudes",
+      "keep": ["idass","idgen","typeass","nomsuplitt","servitude","source"],
+      "geom": "geom_2154"
+    },
+    "public.a4": {
+      "name": "Servitudes A4",
+      "type": "servitudes",
+      "keep": ["idass","idgen","typeass","nomsuplitt","servitude","source"],
+      "geom": "geom_2154"
+    },
+      "public.i4": {
+        "name": "Servitudes I4 - Lignes électriques",
+        "type": "servitudes",
+        "keep": [
+          "tension",
+          "type",
+          "typegen"
+        ],
+        "geom": "geom_2154"
+      },
+    "public.inf_surf_et_zone_preemption": {
+      "name": "Infos surfaciques et zones de préemption",
+      "type": "preemption",
+      "keep": ["gml_id","libelle","typeinf","txt","uploaded_at","source"],
+      "geom": "geom_2154"
+    },
+    "public.irsn_radon_metropole": {
+      "name": "IRSN - Radon métropole",
+      "type": "radon",
+      "keep": ["NOM_COMM","NOM_DEPT","INSEE_COM","CLASSE_POT"],
+      "geom": "geom_2154"
+    },
+    "public.zbrs_gironde": {
+      "name": "ZBRS Gironde",
+      "type": "nuisances_sonores",
+      "keep": ["uid","source","idzonbruit","legende","updated_at"],
+      "geom": "geom_2154"
+    },
+        "public.plan_exposition_bruit": {
+          "name": "Plan d'exposition au bruit (PEB)",
+          "type": "nuisances_sonores",
+          "keep": [
+            "uid",
+            "zone",
+            "indldenext",
+            "indldenint",
+            "nom",
+            "uploaded_at",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+          "public.nuisances_sonores_gironde": {
+            "name": "Nuisances sonores Gironde",
+            "type": "nuisances_sonores",
+            "keep": [
+              "gid",
+              "numero",
+              "debutant",
+              "finissant",
+              "cat_bruit",
+              "larg_secte"
+            ],
+            "geom": "geom_2154"
+          },
+          "public.aoc_viticoles": {
+            "name": "AOC viticoles",
+            "type": "aoc_viticoles",
+            "keep": ["uid","source","denom","crinao","updated_at"],
+            "geom": "geom"
+          },
+          "public.b_haies": {
+            "name": "Haies",
+            "type": "patrimoine_naturel",
+            "keep": [
+              "id","cleabs","date_creation","date_modification",
+              "date_d_apparition","date_de_confirmation","hauteur","largeur",
+              "sources","identifiants_sources","methode_d_acquisition_planimetrique",
+              "precision_planimetrique"
+            ],
+            "geom": "geom_2154"
+          },
+          "public.bruit_ferrees_et_lgv_buffers": {
+            "name": "Buffers bruit ferroviaire et LGV",
+            "type": "nuisances_sonores",
+            "keep": [
+              "gid","source","segment","ligne","rang","pkdebssseg","pkfinssseg",
+              "long_ssseg","base_class","cat_bruit","larg_secte","etat",
+              "electrifie","nb_voies","communes","dept","region","date_maj"
+            ],
+            "geom": "geom_2154"
+          },
+          "public.france_zonage_sismique": {
+            "name": "Zonage sismique France",
+            "type": "risques_naturels",
+            "keep": ["insee","nom","departemen","Sismicite"],
+            "geom": "geom"
+          },
+          "public.galerie_cheminement_et_pilier": {
+            "name": "Galeries et piliers souterrains",
+            "type": "carrieres",
+            "keep": [
+              "gml_id","objectid","Niveau_Carrière","Date__Dernier_levé_Terrain",
+              "globalid","last_edited_date","st_length_shape_","Numéro_INSEE_Niveau"
+            ],
+            "geom": "geometry"
+          },        
+        "public.a1": {
+          "name": "Servitudes A1",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.a2": {
+          "name": "Servitudes A2",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.a3": {
+          "name": "Servitudes A3",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.a5": {
+          "name": "Servitudes A5",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.a6": {
+          "name": "Servitudes A6",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.a8": {
+          "name": "Servitudes A8",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.a10": {
+          "name": "Servitudes A10",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.ar1": {
+          "name": "Servitudes AR1",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.ar2": {
+          "name": "Servitudes AR2",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.ar4": {
+          "name": "Servitudes AR4",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.ar5": {
+          "name": "Servitudes AR5",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.ar6": {
+          "name": "Servitudes AR6",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.as2": {
+          "name": "Servitudes AS2",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.el10": {
+          "name": "Servitudes EL10",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.el11": {
+          "name": "Servitudes EL11",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.el2bis": {
+          "name": "Servitudes EL2BIS",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.el3": {
+          "name": "Servitudes EL3",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.el4": {
+          "name": "Servitudes EL4",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.el5": {
+          "name": "Servitudes EL5",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.el6": {
+          "name": "Servitudes EL6",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.el7": {
+          "name": "Servitudes EL7",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.el8": {
+          "name": "Servitudes EL8",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.el9": {
+          "name": "Servitudes EL9",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.i1": {
+          "name": "Servitudes I1",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.i2": {
+          "name": "Servitudes I2",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.i3": {
+          "name": "Servitudes I3",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.i5": {
+          "name": "Servitudes I5",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.i6": {
+          "name": "Servitudes I6",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.i7": {
+          "name": "Servitudes I7",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.i9": {
+          "name": "Servitudes I9",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.i10": {
+          "name": "Servitudes I10",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.int1": {
+          "name": "Servitudes INT1",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.js1": {
+          "name": "Servitudes JS1",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.pm1": {
+          "name": "Servitudes PM1",
+          "type": "servitudes",
+          "keep": [
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.pm1bis": {
+          "name": "Servitudes PM1BIS",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.pm2": {
+          "name": "Servitudes PM2",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.pm3": {
+          "name": "Servitudes PM3",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.pm4": {
+          "name": "Servitudes PM4",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.pm5": {
+          "name": "Servitudes PM5",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.pm6": {
+          "name": "Servitudes PM6",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.pm7": {
+          "name": "Servitudes PM7",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.pm8": {
+          "name": "Servitudes PM8",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.pm9": {
+          "name": "Servitudes PM9",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.pt1": {
+          "name": "Servitudes PT1",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.pt2": {
+          "name": "Servitudes PT2",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.pt3": {
+          "name": "Servitudes PT3",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.t1": {
+          "name": "Servitudes T1",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.t2": {
+          "name": "Servitudes T2",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.t3": {
+          "name": "Servitudes T3",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.t4": {
+          "name": "Servitudes T4",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.t5": {
+          "name": "Servitudes T5",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.t6": {
+          "name": "Servitudes T6",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.t7": {
+          "name": "Servitudes T7",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        },
+        "public.t9": {
+          "name": "Servitudes T9",
+          "type": "servitudes",
+          "keep": [
+            "idass",
+            "idgen",
+            "typeass",
+            "nomsuplitt",
+            "servitude",
+            "source"
+          ],
+          "geom": "geom_2154"
+        }
+      }
+
+      
+      
