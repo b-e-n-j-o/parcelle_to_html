@@ -421,6 +421,7 @@ def _intersect_one_parcel(*, eng, layers, parcel_feature, carve_enclaves: bool, 
 
                 # Filtrage des très petites intersections (<0.5%)
                 if pct is not None and pct < 0.5:
+                    logger.debug("   🚫 Intersection filtrée: %.3f%% < 0.5%%", pct)
                     continue  # on ignore cette ligne
 
                 row_data["inter_area_m2"] = inter_area
